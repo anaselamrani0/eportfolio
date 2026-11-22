@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anas EL AMRANY — E-Portfolio</title>
+  <title>Anas EL AMRANY — Engineering E-Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
       position: relative;
     }
 
-    /* Canvas Matrix fixé tout au fond derrière les blocs */
+    /* Blue Matrix Canvas Background */
     #matrix-canvas {
       position: fixed;
       top: 0;
@@ -58,7 +58,7 @@
       z-index: 1;
     }
 
-    /* Barre de navigation Glassmorphism */
+    /* Navigation Bar */
     header {
       display: flex;
       justify-content: space-between;
@@ -131,7 +131,7 @@
       transform: translateY(-2px);
     }
 
-    /* Section HERO / HOME */
+    /* HERO / HOME Section */
     .hero {
       position: relative;
       display: grid;
@@ -166,7 +166,7 @@
     }
 
     .hero h1 {
-      font-size: 2.65rem;
+      font-size: 2.5rem;
       font-weight: 800;
       line-height: 1.15;
       margin-bottom: 18px;
@@ -199,7 +199,7 @@
 
     video { width: 100%; display: block; max-height: 310px; }
 
-    /* Grille Bento Moderne */
+    /* Bento Grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -318,7 +318,7 @@
 
     .card:hover .card-footer { gap: 11px; }
 
-    /* Fenêtre Modale */
+    /* Modal Window */
     .modal {
       display: none;
       position: fixed;
@@ -379,7 +379,7 @@
 </head>
 <body>
 
-<!-- Arrière-plan Matrix Bleu animé -->
+<!-- Blue Matrix Background -->
 <canvas id="matrix-canvas"></canvas>
 
 <div class="container">
@@ -390,27 +390,27 @@
       Anas EL AMRANY
     </div>
     <div class="cv-buttons">
-      <a href="cv-fr.pdf" target="_blank" class="btn btn-primary">
+      <a href="cv-en.pdf" target="_blank" class="btn btn-primary">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        CV Français
-      </a>
-      <a href="cv-en.pdf" target="_blank" class="btn btn-outline">
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         Resume (EN)
+      </a>
+      <a href="cv-fr.pdf" target="_blank" class="btn btn-outline">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        CV (FR)
       </a>
     </div>
   </header>
 
-  <!-- Section HOME -->
+  <!-- HOME Section -->
   <section class="hero">
     <div>
       <span class="badge">Home & Elevator Pitch</span>
-      <h1><span class="gradient-text">Élève-Ingénieur & Innovateur</span></h1>
+      <h1><span class="gradient-text">Computer Science & Software Engineering Student</span></h1>
       <p>
-        [Écrivez ici votre paragraphe d'accroche : votre école, votre spécialité d'ingénieur, vos domaines de prédilection et le type de stage ou d'opportunité que vous recherchez.]
+        I am a second-year engineering student at <strong>ENSEEIHT</strong> (Toulouse INP), specializing in Computer Science & Telecommunications (<strong>SIL track</strong>). Driven by a strong analytical background from intensive preparatory classes (MPSI/MP), I am passionate about <strong>Artificial Intelligence, Software Development, and Embedded Systems</strong>. I am currently seeking a second-year engineering internship to apply my technical skills to innovative, high-impact projects.
       </p>
       <button class="btn btn-outline" onclick="openModal('home-details')">
-        Découvrir mon profil complet
+        Explore my full profile
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </button>
     </div>
@@ -418,13 +418,13 @@
       <div class="video-box">
         <video controls preload="metadata">
           <source src="pitch.mp4" type="video/mp4">
-          Votre navigateur ne supporte pas la lecture vidéo.
+          Your browser does not support the video tag.
         </video>
       </div>
     </div>
   </section>
 
-  <!-- Grille Bento avec visuels thématiques -->
+  <!-- Bento Grid -->
   <section class="grid">
     <!-- 1. Engineering Courses -->
     <div class="card" onclick="openModal('courses')">
@@ -437,9 +437,9 @@
         </div>
         <div>
           <h2>Engineering Courses</h2>
-          <p>Matières clés, projets techniques réalisés en laboratoire et compétences d'ingénierie.</p>
+          <p>Core Computer Science & Telecommunications modules, lab projects, and software engineering skills at ENSEEIHT.</p>
         </div>
-        <div class="card-footer">Explorer <span>→</span></div>
+        <div class="card-footer">Explore <span>→</span></div>
       </div>
     </div>
 
@@ -454,9 +454,9 @@
         </div>
         <div>
           <h2>Mobility</h2>
-          <p>Ouverture internationale, échanges académiques, expériences à l'étranger et langues parlées.</p>
+          <p>International outlook, academic exchange plans, cross-cultural experiences, and language proficiencies.</p>
         </div>
-        <div class="card-footer">Explorer <span>→</span></div>
+        <div class="card-footer">Explore <span>→</span></div>
       </div>
     </div>
 
@@ -471,9 +471,9 @@
         </div>
         <div>
           <h2>Civic Engagement</h2>
-          <p>Responsabilités associatives, bénévolat, actions solidaires et impact sociétal.</p>
+          <p>Student associations, volunteering initiatives, community involvement, and social responsibility.</p>
         </div>
-        <div class="card-footer">Explorer <span>→</span></div>
+        <div class="card-footer">Explore <span>→</span></div>
       </div>
     </div>
 
@@ -488,9 +488,9 @@
         </div>
         <div>
           <h2>Sports & Activities</h2>
-          <p>Disciplines sportives pratiquées, esprit d'équipe, passions personnelles et activités extra-scolaires.</p>
+          <p>Athletic disciplines, teamwork, personal passions, and extracurricular pursuits outside the classroom.</p>
         </div>
-        <div class="card-footer">Explorer <span>→</span></div>
+        <div class="card-footer">Explore <span>→</span></div>
       </div>
     </div>
 
@@ -505,15 +505,15 @@
         </div>
         <div>
           <h2>Career Development</h2>
-          <p>Expériences professionnelles, stages, projet de carrière et accès direct à mes CV français et anglais.</p>
+          <p>Professional experiences, second-year internship search, career roadmap, and downloadable English & French resumes.</p>
         </div>
-        <div class="card-footer">Explorer <span>→</span></div>
+        <div class="card-footer">Explore <span>→</span></div>
       </div>
     </div>
   </section>
 </div>
 
-<!-- Fenêtre Modale -->
+<!-- Modal Window -->
 <div class="modal" id="modal" onclick="closeModal()">
   <div class="modal-content" onclick="event.stopPropagation()">
     <button class="close-btn" onclick="closeModal()">&times;</button>
@@ -522,7 +522,7 @@
 </div>
 
 <script>
-  /* Animation Matrix Bleu en arrière-plan */
+  /* Blue Matrix Rain Animation */
   const canvas = document.getElementById('matrix-canvas');
   const ctx = canvas.getContext('2d');
 
@@ -544,7 +544,6 @@
   });
 
   function drawMatrix() {
-    // Voile noir très léger pour créer l'effet de traînée lumineuse
     ctx.fillStyle = 'rgba(3, 6, 12, 0.08)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -552,8 +551,6 @@
 
     for (let i = 0; i < drops.length; i++) {
       const text = chars.charAt(Math.floor(Math.random() * chars.length));
-      
-      // Variation entre bleu cyan brillant et bleu électrique profond
       ctx.fillStyle = Math.random() > 0.85 ? '#7dd3fc' : '#0284c7';
       ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
@@ -566,48 +563,48 @@
 
   setInterval(drawMatrix, 45);
 
-  /* Contenu des sections */
+  /* Sections Content (in English) */
   const sectionsData = {
     'home-details': `
-      <h2>À propos de moi</h2>
-      <h3>Parcours académique</h3>
-      <p>[Détaillez ici votre parcours : classes préparatoires / cycle préparatoire, intégration en école d'ingénieurs et spécialisation actuelle.]</p>
-      <h3>Objectifs professionnels</h3>
-      <p>[Expliquez le secteur qui vous attire et ce que vous souhaitez apporter lors de votre prochain stage.]</p>
+      <h2>About Me</h2>
+      <h3>Academic Background</h3>
+      <p>After completing two years of intensive preparatory classes in Mathematics and Physics (<strong>CPGE MPSI/MP</strong>), I joined <strong>ENSEEIHT (Toulouse INP)</strong>, one of France's leading engineering schools. I am currently in my second year majoring in Computer Science & Telecommunications, within the <strong>SIL (Computer & Software Systems)</strong> track.</p>
+      <h3>Technical Focus & Internship Goal</h3>
+      <p>My academic training and personal projects revolve around <strong>Artificial Intelligence, Software Engineering, and Embedded Systems</strong>. I am actively looking for a 2nd-year engineering internship where I can contribute to building reliable software architectures, intelligent algorithms, or embedded solutions.</p>
     `,
     'courses': `
       <h2>Engineering Courses</h2>
-      <h3>Projets académiques</h3>
-      <p>[Présentez 1 ou 2 projets concrets réalisés en cours : problématique, méthodologie et résultats.]</p>
-      <h3>Compétences techniques</h3>
-      <p>[Listez vos langages, logiciels de simulation, outils de conception ou compétences méthodologiques.]</p>
+      <h3>Academic Projects</h3>
+      <p>[Describe 1 or 2 key projects completed at ENSEEIHT: algorithms, software architecture, networks, or embedded programming.]</p>
+      <h3>Technical Skills</h3>
+      <p>[List your programming languages (e.g., C, Java, Python, Ada, OCaml), frameworks, and tools.]</p>
     `,
     'mobility': `
       <h2>Mobility</h2>
-      <h3>Expérience à l'international</h3>
-      <p>[Décrivez votre semestre d'échange, votre stage à l'étranger ou votre projet de mobilité internationale.]</p>
-      <h3>Langues</h3>
-      <p>[Ex : Français (Natif), Anglais (Niveau B2/C1), Arabe / Espagnol...]</p>
+      <h3>International Experience & Plans</h3>
+      <p>[Describe your international background, exchange semester plans, or internship abroad objectives.]</p>
+      <h3>Languages</h3>
+      <p>[e.g., French (Native), English (Fluent / B2-C1), Arabic...]</p>
     `,
     'civic': `
       <h2>Civic Engagement</h2>
-      <h3>Engagement associatif et citoyen</h3>
-      <p>[Décrivez votre rôle dans une association étudiante, un bureau des élèves, du tutorat ou une action bénévole.]</p>
+      <h3>Community & Student Involvement</h3>
+      <p>[Detail your involvement in student clubs, tutoring, volunteering, or social initiatives.]</p>
     `,
     'sports': `
       <h2>Sports & Activities</h2>
-      <h3>Sports et passions</h3>
-      <p>[Parlez des sports que vous pratiquez régulièrement et des qualités qu'ils développent chez vous.]</p>
+      <h3>Athletics & Personal Interests</h3>
+      <p>[Share the sports you practice and how they build discipline, resilience, and team spirit.]</p>
     `,
     'career': `
       <h2>Career Development</h2>
-      <h3>Expériences & Stages</h3>
-      <p>[Détaillez vos stages précédents, missions réalisées et compétences acquises en entreprise.]</p>
+      <h3>Internship Search & Experience</h3>
+      <p>Currently seeking a second-year engineering internship in <strong>Software Development, Artificial Intelligence, or Embedded Systems</strong>.</p>
       <h3>Curriculum Vitae</h3>
-      <p>Consultez ou téléchargez mes CV directement ci-dessous :</p>
+      <p>View or download my resumes below:</p>
       <div style="display:flex; gap:12px; margin-top:18px; flex-wrap:wrap;">
-        <a href="cv-fr.pdf" target="_blank" class="btn btn-primary">Télécharger CV (FR)</a>
-        <a href="cv-en.pdf" target="_blank" class="btn btn-outline">Download Resume (EN)</a>
+        <a href="cv-en.pdf" target="_blank" class="btn btn-primary">Download Resume (EN)</a>
+        <a href="cv-fr.pdf" target="_blank" class="btn btn-outline">Télécharger CV (FR)</a>
       </div>
     `
   };
